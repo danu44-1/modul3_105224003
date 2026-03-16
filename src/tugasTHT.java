@@ -143,6 +143,7 @@ public class tugasTHT {
                     break;
             
                 default:
+                    System.out.println("Menu tidak dapat diidentifikasi, masukkan kembali");
                     break;
             }
             terbeli = 0;

@@ -10,7 +10,7 @@ public class tugasTHT {
         int pilih, terbeli = 0;
 
         do{
-            System.out.println("\nSistem Tiket");
+            System.out.println("\nSistem Tiket Kiosk");
             System.out.println("\n1.VIP |2.Festival |3.Tribune ");
             System.out.print("Pilih : ");
             pilih = in.nextInt();

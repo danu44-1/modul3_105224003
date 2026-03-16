@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+/*Danu Dimas Putra 105224003 */
+
 public class tugasTHT {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
@@ -11,14 +13,14 @@ public class tugasTHT {
 
         do{
             System.out.println("\nSistem Tiket Kiosk");
-            System.out.println("\n1.VIP |2.Festival |3.Tribune ");
+            System.out.println("\n1.VIP (" + stokV + ") |2.Festival (" + stokF +") |3.Tribune ("+ stokT +")");
             System.out.print("Pilih : ");
             pilih = in.nextInt();
 
             int jumlah;
             switch (pilih) {
                 case 1:
-                    System.out.print("Masukkan Jumlah : ");
+                    System.out.print("Masukkan Jumlah Pembelian : ");
                     jumlah = in.nextInt();
  
                     if (jumlah < stokV){
@@ -35,7 +37,7 @@ public class tugasTHT {
                             }
 
                             if (usia < 0 || usia > 100) {
-                                System.out.println("Usia tidak logis");
+                                System.out.println("Usia tidak logis. Silahkan masukkan kembali");
                                 i--;
                             } else {
                                 if (usia >= 18){
@@ -59,7 +61,7 @@ public class tugasTHT {
                     break;
 
                 case 2:
-                    System.out.print("Masukkan Jumlah : ");
+                    System.out.print("Masukkan Jumlah Pembelian : ");
                     jumlah = in.nextInt();
  
                     if (jumlah < stokF){
@@ -76,7 +78,7 @@ public class tugasTHT {
                             }
 
                             if (usia < 0 || usia > 100) {
-                                System.out.println("Usia tidak logis");
+                                System.out.println("Usia tidak logis. Silahkan masukkan kembali");
                                 i--;
                             } else {
                                 if (usia >= 15){
@@ -100,7 +102,7 @@ public class tugasTHT {
                     break;
 
                 case 3:
-                    System.out.print("Masukkan Jumlah : ");
+                    System.out.print("Masukkan Jumlah Pembelian : ");
                     jumlah = in.nextInt();
  
                     if (jumlah < stokT){
@@ -117,7 +119,7 @@ public class tugasTHT {
                             }
 
                             if (usia < 0 || usia > 100) {
-                                System.out.println("Usia tidak logis");
+                                System.out.println("Usia tidak logis. Silahkan masukkan kembali");
                                 i--;
                             } else {
                                 if (usia >= 0){
